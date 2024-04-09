@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "DALL·E 2024-01-23 09.02.54 - A simple and abstract logo in black and white, relating to finance, economics, or investing. The design should be creative and not overtly obvious in .png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "DALL·E 2024-01-23 09.02.54 - A simple and abstract logo in black and white, relating to finance, economics, or investing. The design should be creative and not overtly obvious in  1.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "DALL·E 2024-01-23 09.02.54 - A simple and abstract logo in black and white, relating to finance, economics, or investing. The design should be creative and not overtly obvious in  2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

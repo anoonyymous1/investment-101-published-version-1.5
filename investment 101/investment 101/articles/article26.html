@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Understanding Stock Quote</title>
+    <style>
+        body {
+            font-size: 50px;
+            line-height: 1.5;
+            padding: 30px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: 10vh;
+            flex-direction: column;
+        }
+        .button {
+            border: none;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            font-size: 70px;
+            margin: 10px 0;
+            cursor: pointer;
+            width: 100%;
+            height: 200px;
+            background-color: #0B2447;
+            color: white;
+            padding: 2px;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Understanding Stock Quote</h1>
+    <img src="stockQuote" alt="Stock Quote MSFT 24 Jan 2024" width="200" height="200">
+
+    <ul>
+        <li><strong>Previous Close:</strong> The price at which a stock traded on the last trading day. This indicates the closing value of the stock in the previous trading session, providing a reference point for assessing price changes.</li>
+
+        <li><strong>Open:</strong> The price at which a stock began trading on the current trading day. This reflects the initial price level at the beginning of the trading day, influencing early market sentiment.</li>
+
+        <li><strong>Bid:</strong> The highest price a buyer is willing to pay for a stock. This represents the demand side of the market, showing the maximum price buyers are willing to pay.</li>
+
+        <li><strong>Ask:</strong> The lowest price a seller is willing to accept for a stock. This represents the supply side of the market, indicating the minimum price sellers are willing to accept.</li>
+
+        <li><strong>Day Range:</strong> The difference between the lowest and highest prices at which a stock has traded during the current trading day. This illustrates the intraday price volatility and trading range of the stock.</li>
+
+        <li><strong>52-week Range:</strong> The lowest and highest prices at which a stock has traded during the last 52 weeks (one year). This provides a broader perspective on a stock's performance, indicating its price range over a significant timeframe.</li>
+
+        <li><strong>Volume:</strong> The total number of shares traded during a specific time period, often measured on a daily basis. This reflects market activity and liquidity, with higher volumes suggesting increased investor interest.</li>
+
+        <li><strong>Avg. Volume:</strong> The average number of shares traded daily over a specific time period, typically 50 or 200 days. This offers a smoothed-out view of a stock's trading activity, indicating its typical daily liquidity.</li>
+
+        <li><strong>Market Cap:</strong> The total market value of a company's outstanding shares of stock, calculated by multiplying the current stock price by the number of outstanding shares. This represents the overall value of the company in the stock market.</li>
+
+        <li><strong>Beta (5Y Monthly):</strong> A measure of a stock's volatility in relation to the market, indicating how much the stock price tends to move compared to a benchmark index. This helps assess a stock's risk relative to the broader market.</li>
+
+        <li><strong>PE Ratio (Price-to-Earnings Ratio):</strong> The ratio of a company's share price to its earnings per share (EPS), reflecting the market's expectations for a company's future earnings growth. This indicates the valuation of a stock relative to its earnings.</li>
+
+        <li><strong>EPS (Earnings Per Share):</strong> The portion of a company's profit allocated to each outstanding share of common stock, providing insight into a company's profitability on a per-share basis. This helps evaluate a company's profitability and earnings distribution.</li>
+
+        <li><strong>Earnings Date:</strong> The date on which a company is scheduled to release its quarterly or annual financial results. This key for investors anticipating and reacting to a company's financial performance.</li>
+
+        <li><strong>Forward Dividend & Yield:</strong> The estimated annual dividend payment per share and the dividend yield, expressed as a percentage of the current stock price. This relevant for income-seeking investors, indicating the company's dividend policy and yield.</li>
+
+        <li><strong>Ex-Dividend Date:</strong> The date on or after which a stock is traded without a previously declared dividend or distribution. This determines eligibility for receiving upcoming dividends.</li>
+
+        <li><strong>1y Target Est (1-Year Target Estimate):</strong> The median target price forecast by analysts covering a particular stock, representing their estimate. This provides an analyst consensus on the stock's expected future price. These metrics collectively offer valuable insights into a stock's past performance, current market dynamics, and analysts' expectations for the future.</li>
+    </ul>
+
+    
+    <div class="button-container">
+        <button type="button" class="button" id="htmlButton">
+            Quiz time!!
+        </button>
+        <script>
+            document.getElementById("htmlButton").addEventListener("click", function() {
+                webkit.messageHandlers.htmlButtonClicked.postMessage("quiz");
+            });
+        </script>
+    </div>
+</body>
+</html>

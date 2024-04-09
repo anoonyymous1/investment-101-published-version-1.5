@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Introduction to the Stock Market</title>
+    <style>
+        body {
+            font-size: 50px;
+            line-height: 1.5;
+            padding: 40px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: 10vh;
+            flex-direction: column;
+        }
+        .button {
+            border: none;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            font-size: 70px;
+            margin: 10px 0;
+            cursor: pointer;
+            width: 100%;
+            height: 200px;
+            background-color: #0B2447;
+            color: white;
+            padding: 2px;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Introduction to the Stock Market</h1>
+    <h2>What is the stock market?</h2>
+    <p>
+        The stock market refers to the collection of exchanges and markets where the buying and selling of stocks (shares of ownership in a company) take place. It provides a platform for companies to raise capital by selling shares to investors and allows individuals and institutions to buy and sell stocks as investments. The primary function of the stock market is to facilitate the transfer of ownership in publicly traded companies. It allows companies to access funding for growth and expansion, while investors have the opportunity to participate in the company&rsquo;s success and potentially yield higher returns.
+    </p>
+    <h2>Why is the stock market important?</h2>
+    <ol>
+        <li>
+            <strong>Capital Formation:</strong> The stock market enables companies to raise capital by issuing shares. This capital can be used for research and development, expansion, acquisitions, and other business activities that drive economic growth and job creation.
+        </li>
+        <li>
+            <strong>Wealth Creation:</strong> This is the most relevant to most of us and in this course. Wealth creation and having enough money when you retire is the exact thing we are going to be learning in this course. Investors, normal people like yourself, can easily participate in the stock market and have the opportunity to generate wealth through the growth in stock, dividends, etc. This wealth can contribute to personal financial goals such as retirement planning, education funding, or starting a business.
+        </li>
+        <li>
+            <strong>Corporate Governance:</strong> The investing stock market allows shareholders to influence company decisions. This promotes transparency and accountability which is crucial in maintaining investor confidence.
+        </li>
+    </ol>
+    <h2>Who are the main participants in the stock market?</h2>
+    <ol>
+        <li>
+            <strong>Investors:</strong> Investors are the people who buy and sell stock as part of their investment strategy.
+        </li>
+        <li>
+            <strong>Companies:</strong> Publicly traded companies that issue shares to raise capital and allow investors to become shareholders. These companies are listed on stock exchanges and must comply with relevant regulatory requirements.
+        </li>
+        <li>
+            <strong>Stock Exchanges:</strong> Organized marketplaces where stocks are bought and sold. Examples include the New York Stock Exchange (NYSE), NASDAQ, London Stock Exchange (LSE), and Tokyo Stock Exchange (TSE).
+        </li>
+        <li>
+            <strong>Brokers and Market Makers:</strong> Brokers act as intermediaries between buyers and sellers, executing trades on behalf of investors.
+        </li>
+        <li>
+            <strong>Regulators:</strong> Regulatory bodies like the Securities and Exchange Commission (SEC) in the United States oversee and enforce rules and regulations to ensure fair and transparent markets, protect investors, and maintain market integrity.
+        </li>
+        <li>
+            <strong>Financial Media:</strong> News outlets, financial publications, and online platforms provide market news, analysis, research reports, and investment information to investors.
+        </li>
+    </ol>
+    <div class="button-container">
+        <button type="button" class="button" id="htmlButton">
+            Quiz time!!
+        </button>
+        <script>
+            document.getElementById("htmlButton").addEventListener("click", function() {
+                webkit.messageHandlers.htmlButtonClicked.postMessage("quiz");
+            });
+        </script>
+    </div>
+</body>
+
+
+</html>

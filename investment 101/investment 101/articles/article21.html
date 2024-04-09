@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Introduction to Fundamental Analysis(Overview)</title>
+    <style>
+        body {
+            font-size: 50px;
+            line-height: 1.5;
+            padding: 30px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: 10vh;
+            flex-direction: column;
+        }
+        .button {
+            border: none;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            font-size: 70px;
+            margin: 10px 0;
+            cursor: pointer;
+            width: 100%;
+            height: 200px;
+            background-color: #0B2447;
+            color: white;
+            padding: 2px;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Introduction to Fundamental Analysis</h1>
+    <p>
+        Fundamental analysis is a method used to evaluate investments by analyzing the intrinsic value of a company. It involves assessing various factors, such as financial statements, industry trends, management quality, and competitive advantage, to determine the true worth of a company and its potential for growth. Fundamental analysis aims to identify stocks that are undervalued or overvalued based on their underlying fundamentals.
+    </p>
+    <div class="button-container">
+        <button type="button" class="button" id="htmlButton">
+            Next!
+        </button>
+
+        <script>
+            document.getElementById("htmlButton").addEventListener("click", function() {
+                webkit.messageHandlers.htmlButtonClicked.postMessage("quiz");
+            });
+        </script>
+    </div>
+</body>
+
+</html>

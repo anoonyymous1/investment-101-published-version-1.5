@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Evaluating Company Financials: Income Statement</title>
+    <style>
+        body {
+            font-size: 50px;
+            line-height: 1.5;
+            padding: 30px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: 10vh;
+            flex-direction: column;
+        }
+        .button {
+            border: none;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            font-size: 70px;
+            margin: 10px 0;
+            cursor: pointer;
+            width: 100%;
+            height: 200px;
+            background-color: #0B2447;
+            color: white;
+            padding: 2px;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Evaluating Company Financials: Income statement</h1>
+    <h2>What is an income statement</h2>
+    <p>
+        The income statement provides information on a company&rsquo;s revenues, expenses, and profitability over a specific period. Analysts assess metrics such as revenue growth, gross profit margin, operating income, and net income to evaluate the financial performance of a company.
+    </p>
+    <p>
+        An income statement is also known as a profit and loss statement. All public companies are required to submit their income statement regularly
+    </p>
+    <h3>Revenues/Sales: </h3>
+    <p>
+        Generally, the number on the first line of an income statement is the revenue/sales number. This number represents the total money earned from selling their products without taking into account the amount spent in the production process.
+    </p>
+    <h3>Cost of Goods Sold: </h3>
+    <p>
+        The Cost of Goods Sold otherwise known as COGS is the direct cost of the product that was sold. Direct costs are the costs used to produce the actual good, such as the money spent on suppliers to create the good.
+    </p>
+    <h3>Gross Profit: </h3>
+    <p>
+        The Gross Profit is the amount of money made from the sale. Basically, it is the difference between the revenue and the cost of goods sold.
+    </p>
+    <h3>Selling, General, and Administrative Expenses: </h3>
+    <p>
+        Selling, General, and Administrative expenses, often called SGA Expenses, is the line that includes all of the other indirect costs used to create the product such as marketing, salaries, rent, etc. The only thing this line does not include are the taxes and interest.
+    </p>
+    <h3>Operating Income: </h3>
+    <p>
+        The operating income is the difference between the gross profit and the SGA expenses. It&rsquo;s the profit made from operation.
+    </p>
+    <h3>Interest and Taxes: </h3>
+    <p>
+        The number on this line of the income statement simply represents the amount of money spent on taxes and interest.
+    </p>
+    <h3>Net income: </h3>
+    <p>
+        The net income is the final profit after taking into account all the costs of production. The net income is calculated by taking the difference between interest and taxes and the operating income. If the net income is positive, the company is profitable, and vice versa.
+    </p>
+    <p>
+        Keep note that when net income is negative it does not necessarily mean that it is a bad thing. People tend to come to quick conclusions after reading the net income but know that other statements can give you more insight into a company&rsquo;s performance and give you a more well-rounded understanding of how the company is doing. Basing your judgment on just one figure might not give you an accurate view of the company&rsquo;s performance.
+    </p>
+    <div class="button-container">
+        <button type="button" class="button" id="htmlButton">
+            Quiz time!!
+        </button>
+        <script>
+            document.getElementById("htmlButton").addEventListener("click", function() {
+                webkit.messageHandlers.htmlButtonClicked.postMessage("quiz");
+            });
+        </script>
+    </div>
+</body>
+
+
+</html>
