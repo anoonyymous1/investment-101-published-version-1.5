@@ -18,11 +18,19 @@ class ProfileViewModel: ObservableObject {
             UserDefaults.profilePicName = profilePicName // Save to UserDefaults when update
         }
     }
+    
+    @Published var loginState: Bool {
+        didSet {
+            UserDefaults.loginState = loginState // Save to UserDefaults when update
+        }
+    }
 
     init() {
         namePresented = UserDefaults.namePresented
         profilePicName = UserDefaults.profilePicName
+        loginState = UserDefaults.loginState
     }
+    
     
     func updateName(_ newValue: String) {
         namePresented = newValue
@@ -50,6 +58,14 @@ extension UserDefaults {
         }
         set{
             UserDefaults.standard.set(newValue, forKey: "pfp")
+        }
+    }
+    static var loginState: Bool{
+        get{
+            return UserDefaults.standard.bool(forKey: "loginState")
+        }
+        set{
+            UserDefaults.standard.set(newValue, forKey: "loginState")
         }
     }
 }

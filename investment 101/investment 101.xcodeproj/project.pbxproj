@@ -25,6 +25,7 @@
 		273AB6FF2B67CD6100055316 /* ChoosePFPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273AB6FE2B67CD6100055316 /* ChoosePFPView.swift */; };
 		274277052BC2E5BC009EFC3E /* fail.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 274277042BC2E5BC009EFC3E /* fail.mp3 */; };
 		274277072BC2E5C1009EFC3E /* pass.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 274277062BC2E5C1009EFC3E /* pass.mp3 */; };
+		279E93152BD0162400E9BBD5 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E93142BD0162400E9BBD5 /* LoginModel.swift */; };
 		27BD4D982BC57B85006042E3 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BD4D972BC57B84006042E3 /* Login.swift */; };
 		27BD4D9A2BC57BA8006042E3 /* LoginSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BD4D992BC57BA8006042E3 /* LoginSuccessView.swift */; };
 		27FE1E572B2ABB6E00472FA0 /* investment_101App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE1E562B2ABB6E00472FA0 /* investment_101App.swift */; };
@@ -69,6 +70,7 @@
 		273AB6FE2B67CD6100055316 /* ChoosePFPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePFPView.swift; sourceTree = "<group>"; };
 		274277042BC2E5BC009EFC3E /* fail.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fail.mp3; sourceTree = "<group>"; };
 		274277062BC2E5C1009EFC3E /* pass.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pass.mp3; sourceTree = "<group>"; };
+		279E93142BD0162400E9BBD5 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		27BD4D972BC57B84006042E3 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		27BD4D992BC57BA8006042E3 /* LoginSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSuccessView.swift; sourceTree = "<group>"; };
 		27FE1E532B2ABB6E00472FA0 /* investment 101.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "investment 101.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -198,6 +200,7 @@
 				272DFD712B5A0C3900DF5DEF /* StartView.swift */,
 				27BD4D972BC57B84006042E3 /* Login.swift */,
 				27BD4D992BC57BA8006042E3 /* LoginSuccessView.swift */,
+				279E93142BD0162400E9BBD5 /* LoginModel.swift */,
 				27FE1E692B2ABC1300472FA0 /* MainMenuView.swift */,
 				272DFD6E2B5A071500DF5DEF /* SplashScreenView.swift */,
 				273AB6E62B679C0900055316 /* OldProfileView.swift */,
@@ -339,6 +342,7 @@
 				27FE1E702B2ABC5E00472FA0 /* QuizView.swift in Sources */,
 				27FE1E7A2B2ABD1D00472FA0 /* ProfileViewModel.swift in Sources */,
 				27FE1E8E2B2AC33400472FA0 /* Constants.swift in Sources */,
+				279E93152BD0162400E9BBD5 /* LoginModel.swift in Sources */,
 				27FE1E6E2B2ABC4B00472FA0 /* ProfileView.swift in Sources */,
 				27FE1E572B2ABB6E00472FA0 /* investment_101App.swift in Sources */,
 				273AB6ED2B679CA500055316 /* coursestutorialview.swift in Sources */,
@@ -486,7 +490,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 1.6;
 				PRODUCT_BUNDLE_IDENTIFIER = "celinetsai.investment-101";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -522,7 +526,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 1.6;
 				PRODUCT_BUNDLE_IDENTIFIER = "celinetsai.investment-101";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
