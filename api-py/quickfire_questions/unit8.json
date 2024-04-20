@@ -1,0 +1,62 @@
+[
+    {
+        "question": "What information does a stock quote provide about a stock?",
+        "answer": "D",
+        "options": [
+            {"option": "Only the company name and stock price", "id": "A"},
+            {"option": "The CEO's name and company headquarters", "id": "B"},
+            {"option": "Details on the company's products only", "id": "C"},
+            {"option": "Price, historical highs and lows, dividends, and other essential trading data", "id": "D"}
+        ]
+    },
+    {
+        "question": "The '52-week high' in a stock quote indicates:",
+        "answer": "A",
+        "options": [
+            {"option": "The highest price at which a stock has traded during the last year", "id": "A"},
+            {"option": "The projected high for the next year", "id": "B"},
+            {"option": "The highest dividend paid in the past year", "id": "C"},
+            {"option": "The number of weeks the stock has been trading", "id": "D"}
+        ]
+    },
+    {
+        "question": "What does 'Dividend Yield' represent in a stock quote?",
+        "answer": "C",
+        "options": [
+            {"option": "The total revenue of the company", "id": "A"},
+            {"option": "The amount of stock available to trade", "id": "B"},
+            {"option": "The ratio of a company's annual dividend compared to its share price", "id": "C"},
+            {"option": "The CEO's salary", "id": "D"}
+        ]
+    },
+    {
+        "question": "What does 'market cap' mean in a stock quote?",
+        "answer": "B",
+        "options": [
+            {"option": "The maximum number of shares a company is allowed to issue", "id": "A"},
+            {"option": "The total value of the company's outstanding shares", "id": "B"},
+            {"option": "The capital a company has in its market bank accounts", "id": "C"},
+            {"option": "The capacity of the stock market to handle transactions", "id": "D"}
+        ]
+    },
+    {
+        "question": "In a stock quote, what does 'volume' refer to?",
+        "answer": "A",
+        "options": [
+            {"option": "The number of shares traded during a specific time period", "id": "A"},
+            {"option": "The physical size of the company's headquarters", "id": "B"},
+            {"option": "The loudness of trading floor activity", "id": "C"},
+            {"option": "The amount of stock a company has left to sell", "id": "D"}
+        ]
+    },
+    {
+        "question": "What does 'previous close' indicate in a stock quote?",
+        "answer": "D",
+        "options": [
+            {"option": "The price at which the stock opened the market on the current day", "id": "A"},
+            {"option": "The average price of the stock over the previous year", "id": "B"},
+            {"option": "The highest price the stock reached in the last trading session", "id": "C"},
+            {"option": "The last price at which a stock was traded on the previous trading day", "id": "D"}
+        ]
+    }
+]

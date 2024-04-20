@@ -1,0 +1,52 @@
+[
+    {
+        "question": "What does the P/E (Price-to-Earnings) ratio help investors evaluate?",
+        "answer": "A",
+        "options": [
+            {"option": "The company's valuation in comparison to its earnings", "id": "A"},
+            {"option": "How much debt a company is carrying", "id": "B"},
+            {"option": "The operational efficiency of the company", "id": "C"},
+            {"option": "Cash flow stability", "id": "D"}
+        ]
+    },
+    {
+        "question": "What is considered a good return on equity (ROE) ratio?",
+        "answer": "D",
+        "options": [
+            {"option": "Below 5%", "id": "A"},
+            {"option": "5% - 10%", "id": "B"},
+            {"option": "10% - 15%", "id": "C"},
+            {"option": "15% and above", "id": "D"}
+        ]
+    },
+    {
+        "question": "What does the current ratio measure?",
+        "answer": "C",
+        "options": [
+            {"option": "Profitability", "id": "A"},
+            {"option": "Debt levels", "id": "B"},
+            {"option": "Liquidity", "id": "C"},
+            {"option": "Investment potential", "id": "D"}
+        ]
+    },
+    {
+        "question": "A company with a 'moat' is characterized by having:",
+        "answer": "B",
+        "options": [
+            {"option": "High employee turnover", "id": "A"},
+            {"option": "A competitive advantage that is sustainable", "id": "B"},
+            {"option": "Multiple revenue streams", "id": "C"},
+            {"option": "Rapid growth in a new industry", "id": "D"}
+        ]
+    },
+    {
+        "question": "What does the debt-to-equity ratio inform about a company?",
+        "answer": "A",
+        "options": [
+            {"option": "The proportion of financing the company has acquired through debt compared to equity", "id": "A"},
+            {"option": "Cash reserves", "id": "B"},
+            {"option": "Market share", "id": "C"},
+            {"option": "Price stability", "id": "D"}
+        ]
+    }
+]

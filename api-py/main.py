@@ -4,6 +4,9 @@ from pymongo import MongoClient
 from pymongo.errors import DuplicateKeyError
 from flask_cors import CORS  # Import CORS
 
+import json
+import os
+
 app = Flask(__name__)
 CORS(app)  # Enable CORS on the Flask app
 
@@ -53,6 +56,26 @@ def add_user():
         return jsonify("success")
     except DuplicateKeyError:
         return jsonify({"error": "username already taken"}), 400
+
+
+
+@app.route('/get-questions', methods=['GET'])
+def get_questions():
+    unit_name = request.args.get('unit', '')
+    file_path = f'./quickfire_questions/{unit_name}.json'
+    
+    try:
+        if not os.path.exists(file_path):
+            return jsonify({'error': 'File not found'}), 404
+        with open(file_path, 'r') as file:
+            questions = json.load(file)
+            return jsonify(questions), 200
+    except json.JSONDecodeError:
+        return jsonify({'error': 'Invalid JSON in file'}), 500
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+
 
 if __name__ == '__main__':
     app.run(debug=True, port=5011)

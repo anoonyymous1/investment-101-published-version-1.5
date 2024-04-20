@@ -29,6 +29,13 @@ struct MainMenuView: View {
                 CourseTutorialView()
             }
             
+            NavigationStack{
+                PracticeSelectionView()
+            }.tabItem {
+                Image(systemName: "bolt.fill")
+                Text("Practice")
+            }
+            
 //            .tag(0)
 //            //stockview
 //            NavigationStack{
@@ -56,7 +63,14 @@ struct MainMenuView: View {
             }
             
             .tag(1)
+            
+            
         }
         .navigationBarBackButtonHidden(true)
+    }
+}
+struct MainMenuViewPreview: PreviewProvider {
+    static var previews: some View {
+        MainMenuView()
     }
 }

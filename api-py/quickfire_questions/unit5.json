@@ -1,0 +1,52 @@
+[
+    {
+        "question": "What does a balance sheet represent?",
+        "answer": "A",
+        "options": [
+            {"option": "A snapshot of a company’s financial position at a specific point in time", "id": "A"},
+            {"option": "A company’s profitability over the fiscal year", "id": "B"},
+            {"option": "The flow of cash into and out of a company", "id": "C"},
+            {"option": "Dividend payout ratios", "id": "D"}
+        ]
+    },
+    {
+        "question": "Which of the following would be classified as an asset on a balance sheet?",
+        "answer": "B",
+        "options": [
+            {"option": "Notes payable", "id": "A"},
+            {"option": "Inventory", "id": "B"},
+            {"option": "Accrued expenses", "id": "C"},
+            {"option": "Long-term debt", "id": "D"}
+        ]
+    },
+    {
+        "question": "What is considered a liability in a balance sheet?",
+        "answer": "D",
+        "options": [
+            {"option": "Cash and cash equivalents", "id": "A"},
+            {"option": "Trade receivables", "id": "B"},
+            {"option": "Prepaid expenses", "id": "C"},
+            {"option": "Accounts payable", "id": "D"}
+        ]
+    },
+    {
+        "question": "Shareholder equity is calculated as:",
+        "answer": "C",
+        "options": [
+            {"option": "Assets plus liabilities", "id": "A"},
+            {"option": "Total revenue minus total expenses", "id": "B"},
+            {"option": "Assets minus liabilities", "id": "C"},
+            {"option": "Gross profit minus operating expenses", "id": "D"}
+        ]
+    },
+    {
+        "question": "Which statement about the balance sheet is correct?",
+        "answer": "A",
+        "options": [
+            {"option": "It details the company's assets, liabilities, and shareholders' equity", "id": "A"},
+            {"option": "It provides an overview of the company's operational efficiency", "id": "B"},
+            {"option": "It solely focuses on the company’s income and expenses", "id": "C"},
+            {"option": "It is more about the company’s future profitability projections", "id": "D"}
+        ]
+    }
+]

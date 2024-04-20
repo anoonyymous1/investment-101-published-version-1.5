@@ -1,0 +1,52 @@
+[
+    {
+        "question": "What is the primary goal of fundamental analysis?",
+        "answer": "A",
+        "options": [
+            {"option": "To determine a stock's intrinsic value", "id": "A"},
+            {"option": "To predict daily price fluctuations", "id": "B"},
+            {"option": "To follow market trends", "id": "C"},
+            {"option": "To assess market sentiment", "id": "D"}
+        ]
+    },
+    {
+        "question": "Which of these is a key component of fundamental analysis?",
+        "answer": "D",
+        "options": [
+            {"option": "Chart patterns", "id": "A"},
+            {"option": "Price momentum", "id": "B"},
+            {"option": "Volume analysis", "id": "C"},
+            {"option": "Evaluating a company’s financial statements", "id": "D"}
+        ]
+    },
+    {
+        "question": "Which sector analysis is used in fundamental analysis?",
+        "answer": "C",
+        "options": [
+            {"option": "Technical indicators", "id": "A"},
+            {"option": "Behavioral economics", "id": "B"},
+            {"option": "Economic indicators", "id": "C"},
+            {"option": "Quantitative analysis", "id": "D"}
+        ]
+    },
+    {
+        "question": "Fundamental analysis typically looks at:",
+        "answer": "B",
+        "options": [
+            {"option": "Short-term trends", "id": "A"},
+            {"option": "Long-term growth potential", "id": "B"},
+            {"option": "Immediate market movements", "id": "C"},
+            {"option": "Speculative value", "id": "D"}
+        ]
+    },
+    {
+        "question": "Fundamental analysts evaluate dividends based on:",
+        "answer": "C",
+        "options": [
+            {"option": "The company's stock price on a given day", "id": "A"},
+            {"option": "The opinion of top traders", "id": "B"},
+            {"option": "The company's profitability and payout policies", "id": "C"},
+            {"option": "Current interest rates", "id": "D"}
+        ]
+    }
+]

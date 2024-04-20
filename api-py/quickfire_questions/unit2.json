@@ -1,0 +1,52 @@
+[
+    {
+        "question": "What is a mutual fund?",
+        "answer": "C",
+        "options": [
+            {"option": "A credit facility offered to investors", "id": "A"},
+            {"option": "A long-term deposit product", "id": "B"},
+            {"option": "A pool of money managed by professionals investing in stocks, bonds, or other assets", "id": "C"},
+            {"option": "A type of insurance product", "id": "D"}
+        ]
+    },
+    {
+        "question": "What is meant by portfolio diversification?",
+        "answer": "D",
+        "options": [
+            {"option": "Investing all your money into one type of asset", "id": "A"},
+            {"option": "Buying stocks from a specific industry", "id": "B"},
+            {"option": "Focusing only on bonds", "id": "C"},
+            {"option": "Spreading investments across various types of assets to reduce risk", "id": "D"}
+        ]
+    },
+    {
+        "question": "Which of the following is a benefit of investing?",
+        "answer": "A",
+        "options": [
+            {"option": "Potential for generating income or profit through appreciation", "id": "A"},
+            {"option": "Guaranteed returns", "id": "B"},
+            {"option": "Immediate liquidity", "id": "C"},
+            {"option": "Zero risk", "id": "D"}
+        ]
+    },
+    {
+        "question": "What is a bond?",
+        "answer": "B",
+        "options": [
+            {"option": "A share of ownership in a company", "id": "A"},
+            {"option": "A debt investment in which an investor loans money to an entity", "id": "B"},
+            {"option": "A type of life insurance", "id": "C"},
+            {"option": "A mutual fund", "id": "D"}
+        ]
+    },
+    {
+        "question": "What does it mean to 'short-sell' a stock?",
+        "answer": "D",
+        "options": [
+            {"option": "To sell a stock after a long period", "id": "A"},
+            {"option": "To sell stocks only when the market is bullish", "id": "B"},
+            {"option": "To sell a borrowed stock", "id": "C"},
+            {"option": "To borrow stocks, sell them, and then buy them back later at a lower price to return them", "id": "D"}
+        ]
+    }
+]

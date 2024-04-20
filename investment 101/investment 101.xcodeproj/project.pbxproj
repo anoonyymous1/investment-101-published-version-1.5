@@ -50,6 +50,7 @@
 		27FE1E8B2B2AC29E00472FA0 /* article24.html in Resources */ = {isa = PBXBuildFile; fileRef = 27FE1E8A2B2AC29E00472FA0 /* article24.html */; };
 		27FE1E8E2B2AC33400472FA0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE1E8D2B2AC33400472FA0 /* Constants.swift */; };
 		27FE1E922B33E93500472FA0 /* article11.html in Resources */ = {isa = PBXBuildFile; fileRef = 27FE1E7E2B2AC17F00472FA0 /* article11.html */; };
+		36E6063D2BD352BC009F96BF /* QuickFireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E6063C2BD352BC009F96BF /* QuickFireView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +97,7 @@
 		27FE1E882B2AC28800472FA0 /* article23.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = article23.html; sourceTree = "<group>"; };
 		27FE1E8A2B2AC29E00472FA0 /* article24.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = article24.html; sourceTree = "<group>"; };
 		27FE1E8D2B2AC33400472FA0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		36E6063C2BD352BC009F96BF /* QuickFireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickFireView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +204,7 @@
 				27BD4D992BC57BA8006042E3 /* LoginSuccessView.swift */,
 				279E93142BD0162400E9BBD5 /* LoginModel.swift */,
 				27FE1E692B2ABC1300472FA0 /* MainMenuView.swift */,
+				36E6063C2BD352BC009F96BF /* QuickFireView.swift */,
 				272DFD6E2B5A071500DF5DEF /* SplashScreenView.swift */,
 				273AB6E62B679C0900055316 /* OldProfileView.swift */,
 				27FE1E792B2ABD1D00472FA0 /* ProfileViewModel.swift */,
@@ -345,6 +348,7 @@
 				279E93152BD0162400E9BBD5 /* LoginModel.swift in Sources */,
 				27FE1E6E2B2ABC4B00472FA0 /* ProfileView.swift in Sources */,
 				27FE1E572B2ABB6E00472FA0 /* investment_101App.swift in Sources */,
+				36E6063D2BD352BC009F96BF /* QuickFireView.swift in Sources */,
 				273AB6ED2B679CA500055316 /* coursestutorialview.swift in Sources */,
 				273AB6F02B679CB200055316 /* redirectview.swift in Sources */,
 				273AB6FF2B67CD6100055316 /* ChoosePFPView.swift in Sources */,

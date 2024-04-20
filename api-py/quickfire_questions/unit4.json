@@ -1,0 +1,52 @@
+[
+    {
+        "question": "What does an income statement show?",
+        "answer": "B",
+        "options": [
+            {"option": "The company's assets and liabilities", "id": "A"},
+            {"option": "The company’s profitability over a specific time period", "id": "B"},
+            {"option": "The inflows and outflows of cash", "id": "C"},
+            {"option": "The equity held by shareholders", "id": "D"}
+        ]
+    },
+    {
+        "question": "Which item would you typically find on an income statement?",
+        "answer": "D",
+        "options": [
+            {"option": "Current assets", "id": "A"},
+            {"option": "Long-term liabilities", "id": "B"},
+            {"option": "Shareholder equity", "id": "C"},
+            {"option": "Revenue", "id": "D"}
+        ]
+    },
+    {
+        "question": "What is EBITDA an indicator of?",
+        "answer": "A",
+        "options": [
+            {"option": "A company's operational profitability", "id": "A"},
+            {"option": "Net cash used by financing activities", "id": "B"},
+            {"option": "Total debt level", "id": "C"},
+            {"option": "Shareholder value", "id": "D"}
+        ]
+    },
+    {
+        "question": "Cost of Goods Sold (COGS) is subtracted from:",
+        "answer": "C",
+        "options": [
+            {"option": "Total liabilities", "id": "A"},
+            {"option": "Net income", "id": "B"},
+            {"option": "Revenue", "id": "C"},
+            {"option": "Total equity", "id": "D"}
+        ]
+    },
+    {
+        "question": "Which of the following statements is true about an income statement?",
+        "answer": "B",
+        "options": [
+            {"option": "It details the company’s assets and liabilities at year-end", "id": "A"},
+            {"option": "It can help investors assess the company's financial performance and profit margins", "id": "B"},
+            {"option": "It shows changes in equity throughout a fiscal year", "id": "C"},
+            {"option": "It is mainly used to evaluate liquidity", "id": "D"}
+        ]
+    }
+]

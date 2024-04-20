@@ -1,0 +1,52 @@
+[
+    {
+        "question": "What does a cash flow statement display?",
+        "answer": "B",
+        "options": [
+            {"option": "Net income of the company", "id": "A"},
+            {"option": "Cash inflows and outflows during a period", "id": "B"},
+            {"option": "The value of assets and liabilities", "id": "C"},
+            {"option": "Equity value changes over the period", "id": "D"}
+        ]
+    },
+    {
+        "question": "Which section would you find expenses for equipment purchases in a cash flow statement?",
+        "answer": "A",
+        "options": [
+            {"option": "Investing activities", "id": "A"},
+            {"option": "Operating activities", "id": "B"},
+            {"option": "Financing activities", "id": "C"},
+            {"option": "Expenditure activities", "id": "D"}
+        ]
+    },
+    {
+        "question": "What signifies a healthy cash flow from operations?",
+        "answer": "C",
+        "options": [
+            {"option": "More cash outflows than inflows", "id": "A"},
+            {"option": "High capital expenditure", "id": "B"},
+            {"option": "The cash inflows from operating activities exceed the cash outflows", "id": "C"},
+            {"option": "Significant borrowing", "id": "D"}
+        ]
+    },
+    {
+        "question": "Depreciation is often added back to net income in which section of the cash flow statement?",
+        "answer": "B",
+        "options": [
+            {"option": "Investing activities", "id": "A"},
+            {"option": "Operating activities", "id": "B"},
+            {"option": "Financing activities", "id": "C"},
+            {"option": "None of the above", "id": "D"}
+        ]
+    },
+    {
+        "question": "Dividend payments are recorded under which section in a cash flow statement?",
+        "answer": "C",
+        "options": [
+            {"option": "Operating activities", "id": "A"},
+            {"option": "Investing activities", "id": "B"},
+            {"option": "Financing activities", "id": "C"},
+            {"option": "Equity activities", "id": "D"}
+        ]
+    }
+]

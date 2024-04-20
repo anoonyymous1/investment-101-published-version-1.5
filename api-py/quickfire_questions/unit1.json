@@ -1,0 +1,54 @@
+
+
+[
+    {
+        "question": "What is a stock?",
+        "answer": "C",
+        "options": [
+            {"option": "A type of bond", "id": "A"},
+            {"option": "A form of mutual fund", "id": "B"},
+            {"option": "Ownership in a corporation", "id": "C"},
+            {"option": "A certificate of debt", "id": "D"}
+        ]
+    },
+    {
+        "question": "What is the primary purpose of the stock market?",
+        "answer": "B",
+        "options": [
+            {"option": "To insure stocks", "id": "A"},
+            {"option": "To facilitate buying and selling of stocks, bonds, and other securities", "id": "B"},
+            {"option": "To provide loans to businesses", "id": "C"},
+            {"option": "To control the national economy", "id": "D"}
+        ]
+    },
+    {
+        "question": "What does it mean when someone says a stock market is bullish?",
+        "answer": "A",
+        "options": [
+            {"option": "The market is expected to rise", "id": "A"},
+            {"option": "The market is expected to fall", "id": "B"},
+            {"option": "The market is holding steady", "id": "C"},
+            {"option": "The market is closed", "id": "D"}
+        ]
+    },
+    {
+        "question": "Which of the following indexes measures the performance of the stock market?",
+        "answer": "D",
+        "options": [
+            {"option": "The Federal Reserve", "id": "A"},
+            {"option": "Standard Poors", "id": "B"},
+            {"option": "LIBOR", "id": "C"},
+            {"option": "Dow Jones Industrial Average", "id": "D"}
+        ]
+    },
+    {
+        "question": "What are dividends?",
+        "answer": "C",
+        "options": [
+            {"option": "A fee paid to brokers for buying stocks", "id": "A"},
+            {"option": "Interests earned on bonds", "id": "B"},
+            {"option": "A portion of a company's earnings distributed to shareholders", "id": "C"},
+            {"option": "Penalties for selling stocks too soon", "id": "D"}
+        ]
+    }
+]
