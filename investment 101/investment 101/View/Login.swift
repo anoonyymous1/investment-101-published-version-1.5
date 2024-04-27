@@ -7,7 +7,6 @@
 
 import SwiftUI
 import Foundation
-
 struct LoginView: View {
     @StateObject private var viewModel = LoginViewModel()
     @State private var username: String = ""
@@ -15,67 +14,135 @@ struct LoginView: View {
     @State private var showingCreateAccount = false
     @State private var showingError = false
     @State private var errorMessage = ""
-    @State private var showLoginSuccess = false // State variable for controlling navigation
-    @State private var isLoading = false // Track loading state
+    @State private var showLoginSuccess = false
+    @State private var isLoading = false
 
     var body: some View {
         NavigationStack {
-            VStack {
-                TextField("Username", text: $username)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding()
+            ZStack {
+                VStack(spacing: 0) {
+                    Image("login_3")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(height: UIScreen.main.bounds.height / 2)
+                        .clipped()
+                    
+                    
+                    VStack(spacing: 0) {
+                        Color.clear.frame(height: 50) // Add some invisible space combining image and fields sections
 
-                SecureField("Password", text: $password)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding()
+                        VStack {
+                            Text("Login")
+                                .font(.title)
+                                .fontWeight(.bold)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .padding(.leading)
+                                .padding()
+                                
 
-                if isLoading {
-                    // Display a loading indicator when isLoading is true
-                    ProgressView()
-                        .progressViewStyle(CircularProgressViewStyle(tint: .blue))
-                        .padding()
-                } else {
-                    // Show the login button when not loading
-                    Button("Login") {
-                        isLoading = true // Start loading
-                        viewModel.login(username: username, password: password) { success in
-                            isLoading = false // Stop loading regardless of the outcome
-                            if success {
-                                showLoginSuccess = true
-                            } else {
-                                errorMessage = "Login failed. Please try again."
-                                showingError = true
+                            VStack {
+                                TextField("Username", text: $username)
+                                    .padding()
+                                    .background(Color.white)
+                                    .cornerRadius(10)
+                                    .padding(.horizontal, 12)
+
+                                SecureField("Password", text: $password)
+                                    .padding()
+                                    .background(Color.white)
+                                    .cornerRadius(10)
+                                    .padding(.horizontal, 12)
+
+                                if isLoading {
+                                    ProgressView()
+                                        .progressViewStyle(CircularProgressViewStyle(tint: .blue))
+                                        .padding()
+                                } else {
+                                    Button(action: {
+                                        isLoading = true
+                                        viewModel.login(username: username, password: password) { success in
+                                            isLoading = false
+                                            if success {
+                                                showLoginSuccess = true
+                                            } else {
+                                                errorMessage = "Login failed. Please try again."
+                                                showingError = true
+                                            }
+                                        }
+                                    }) {
+                                        Text("Login")
+                                            .fontWeight(.bold)
+                                            .foregroundColor(.white)
+                                            .padding()
+                                            .frame(maxWidth: .infinity)
+                                            .background(Color.blue)
+                                            .cornerRadius(10)
+                                    }
+                                    .padding(.horizontal)
+                                }
+
+                                Button(action: {
+                                    showingCreateAccount = true
+                                }) {
+                                    Text("Create Account")
+                                        .foregroundColor(.white)
+                                        .padding()
+                                        .frame(maxWidth: .infinity)
+                                        .background(Color.gray)
+                                        .cornerRadius(10)
+                                }
+                                .padding(.horizontal)
+                                .padding(.top, 8)
+
+                                Spacer(minLength: 50)
                             }
                         }
-                    }
-                    .padding()
-                }
+                        .background(Color.white.opacity(0.95))
+                        .cornerRadius(20, corners: [.topLeft, .topRight])
+                        .padding(.top, -30)
 
-                Button("Create new account") {
-                    showingCreateAccount = true
-                }
-                .padding()
-                .sheet(isPresented: $showingCreateAccount) {
-                    CreateAccountView { success in
-                        showingCreateAccount = !success
-                        if success {
-                            // Optionally reset login form or handle account creation success
+                        Text("investmentapp v1.6")
+                            .foregroundColor(.gray)
+                            .font(.system(size: 12))
+                            .padding(.bottom, 30)
+                    }
+                    .sheet(isPresented: $showingCreateAccount) {
+                        CreateAccountView { success in
+                            showingCreateAccount = !success
                         }
                     }
                 }
-            }
-            .navigationTitle("Login")
-            .navigationDestination(isPresented: $showLoginSuccess) {
-                LoginSuccessView()
-            }
-            .disabled(isLoading) // Optionally disable interaction when loading
-            .alert(isPresented: $showingError) {
-                Alert(title: Text("Error"), message: Text(errorMessage), dismissButton: .default(Text("OK")))
+                .edgesIgnoringSafeArea(.all)
+
+                .navigationDestination(isPresented: $showLoginSuccess) {
+                    LoginSuccessView()
+                }
+                .disabled(isLoading)
+                .alert(isPresented: $showingError) {
+                    Alert(title: Text("Error"), message: Text(errorMessage), dismissButton: .default(Text("OK")))
+                }
             }
         }
     }
 }
 
+
+// Helper extension to allow corner rounding specific corners
+extension View {
+    func cornerRadius(_ radius: CGFloat, corners: UIRectCorner) -> some View {
+        clipShape( RoundedCorner(radius: radius, corners: corners) )
+    }
+}
+
+struct RoundedCorner: Shape {
+    var radius: CGFloat = .infinity
+    var corners: UIRectCorner = .allCorners
+
+    func path(in rect: CGRect) -> Path {
+        let path = UIBezierPath(roundedRect: rect, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        return Path(path.cgPath)
+    }
+}
 
 struct CreateAccountView: View {
     var completion: (Bool) -> Void
@@ -88,44 +155,84 @@ struct CreateAccountView: View {
     var body: some View {
         NavigationView {
             VStack {
-                TextField("Username", text: $username)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                // Notch
+                Capsule()
+                    .frame(width: 40, height: 6)
+                    .foregroundColor(Color.gray)
+                    .padding(.top, 20)
+                    .opacity(0.5)  // Adjust opacity to match your UI design.
+                Text("Register")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.leading)
                     .padding()
+                Spacer()
+                Image("login_4")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 350, height: 220)
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
+                Spacer()
                 
-                SecureField("Password", text: $password)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding()
-                
-                SecureField("Confirm Password", text: $passwordConfirm)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding()
-                
-                Button("Create new account") {
-                    guard password == passwordConfirm else {
-                        errorMessage = "Passwords do not match."
-                        showingError = true
-                        return
-                    }
+                VStack(spacing: 8) {
+                    TextField("Username", text: $username)
+                        .padding()
+                        .background(Color.white)
+                        .cornerRadius(10)
+                        .padding(.horizontal, 5)
                     
-                    // Call your API to create a new account
-                    LoginViewModel().createAccount(username: username, password: password, passwordConfirm: passwordConfirm) { success in
-                        if success {
-                            completion(true)
-                        } else {
-                            errorMessage = "User already exists"
+                    SecureField("Password", text: $password)
+                        .padding()
+                        .background(Color.white)
+                        .cornerRadius(10)
+                        .padding(.horizontal, 5)
+                    
+                    SecureField("Confirm Password", text: $passwordConfirm)
+                        .padding()
+                        .background(Color.white)
+                        .cornerRadius(10)
+                        .padding(.horizontal, 5)
+                    
+                    Button(action: {
+                        guard password == passwordConfirm else {
+                            errorMessage = "Passwords do not match."
                             showingError = true
+                            return
                         }
+                        
+                        // Call your API to create a new account
+                        LoginViewModel().createAccount(username: username, password: password, passwordConfirm: passwordConfirm) { success in
+                            if success {
+                                completion(true)
+                            } else {
+                                errorMessage = "User already exists"
+                                showingError = true
+                            }
+                        }
+                    }) {
+                        Text("Create Account")
+                            .fontWeight(.bold)
+                            .foregroundColor(.white)
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color.gray)
+                            .cornerRadius(10)
                     }
+                    .padding(.top)
                 }
                 .padding()
-                .alert(isPresented: $showingError) {
-                    Alert(title: Text("Error"), message: Text(errorMessage), dismissButton: .default(Text("OK")))
-                }
+                
+                Spacer()
             }
-            .navigationTitle("Create Account")
+            .background(Color.white.edgesIgnoringSafeArea(.all))
+            .alert(isPresented: $showingError) {
+                Alert(title: Text("Error"), message: Text(errorMessage), dismissButton: .default(Text("OK")))
+            }
         }
     }
 }
+
 
 
 class LoginViewModel: ObservableObject {
