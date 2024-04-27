@@ -160,7 +160,7 @@ struct CreateAccountView: View {
                     .frame(width: 40, height: 6)
                     .foregroundColor(Color.gray)
                     .padding(.top, 20)
-                    .opacity(0.5)  // Adjust opacity to match your UI design.
+                    .opacity(0.5)
                 Text("Register")
                     .font(.title)
                     .fontWeight(.bold)
@@ -201,7 +201,6 @@ struct CreateAccountView: View {
                             return
                         }
                         
-                        // Call your API to create a new account
                         LoginViewModel().createAccount(username: username, password: password, passwordConfirm: passwordConfirm) { success in
                             if success {
                                 completion(true)
@@ -236,7 +235,7 @@ struct CreateAccountView: View {
 
 
 class LoginViewModel: ObservableObject {
-    // URL of your login API endpoint
+    // URL login using API endpoint
     private let loginURL = URL(string: "https://shibal.online/login")!
     // URL of your create account API endpoint
     private let createAccountURL = URL(string: "https://shibal.online/adduser")!
@@ -284,7 +283,7 @@ class LoginViewModel: ObservableObject {
 
     
     // Function to create a new account
-    // Function to create a new account
+    
     func createAccount(username: String, password: String, passwordConfirm: String, completion: @escaping (Bool) -> Void) {
         var request = URLRequest(url: createAccountURL)
         request.httpMethod = "POST"
@@ -317,10 +316,6 @@ class LoginViewModel: ObservableObject {
 
 }
 
-
-
-// Assuming you have LoginViewModel defined with login and createAccount methods that call your API
-// and handle responses accordingly. You'll need to implement these methods based on your API's requirements.
 
 struct Login_Previews: PreviewProvider {
     static var previews: some View {
