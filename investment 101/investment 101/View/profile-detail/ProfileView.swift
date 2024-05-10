@@ -26,6 +26,7 @@ struct ProfileView: View {
     var body: some View {
         
         VStack(){
+            
             Rectangle()
                 .foregroundColor(Color(red: rValue, green: gValue, blue: bValue, opacity: 1.0))
                 .edgesIgnoringSafeArea(.top)
@@ -82,10 +83,13 @@ struct ProfileView: View {
             .background(Color.white)
             .cornerRadius(12)
             .shadow(radius: 2)
+            
+            LogoutButton()
         
         }
         .edgesIgnoringSafeArea(.top)
         .padding(.top, -150)
+        
     }
         
 }

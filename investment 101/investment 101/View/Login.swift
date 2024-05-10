@@ -115,6 +115,7 @@ struct LoginView: View {
                 .edgesIgnoringSafeArea(.all)
 
                 .navigationDestination(isPresented: $showLoginSuccess) {
+                    
                     LoginSuccessView()
                 }
                 .disabled(isLoading)

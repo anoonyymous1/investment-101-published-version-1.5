@@ -50,6 +50,7 @@
 		27FE1E8B2B2AC29E00472FA0 /* article24.html in Resources */ = {isa = PBXBuildFile; fileRef = 27FE1E8A2B2AC29E00472FA0 /* article24.html */; };
 		27FE1E8E2B2AC33400472FA0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE1E8D2B2AC33400472FA0 /* Constants.swift */; };
 		27FE1E922B33E93500472FA0 /* article11.html in Resources */ = {isa = PBXBuildFile; fileRef = 27FE1E7E2B2AC17F00472FA0 /* article11.html */; };
+		360ECCD72BED1015000BC893 /* LogoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360ECCD62BED1015000BC893 /* LogoutButton.swift */; };
 		36E6063D2BD352BC009F96BF /* QuickFireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E6063C2BD352BC009F96BF /* QuickFireView.swift */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +98,7 @@
 		27FE1E882B2AC28800472FA0 /* article23.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = article23.html; sourceTree = "<group>"; };
 		27FE1E8A2B2AC29E00472FA0 /* article24.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = article24.html; sourceTree = "<group>"; };
 		27FE1E8D2B2AC33400472FA0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		360ECCD62BED1015000BC893 /* LogoutButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutButton.swift; sourceTree = "<group>"; };
 		36E6063C2BD352BC009F96BF /* QuickFireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickFireView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				27FE1E6D2B2ABC4A00472FA0 /* ProfileView.swift */,
+				360ECCD62BED1015000BC893 /* LogoutButton.swift */,
 				273AB6DE2B679BAA00055316 /* SocialMediaListView.swift */,
 				273AB6DF2B679BAA00055316 /* MapView.swift */,
 				273AB6E02B679BAA00055316 /* profile-settings */,
@@ -207,9 +210,9 @@
 				36E6063C2BD352BC009F96BF /* QuickFireView.swift */,
 				272DFD6E2B5A071500DF5DEF /* SplashScreenView.swift */,
 				273AB6E62B679C0900055316 /* OldProfileView.swift */,
+				27FE1E732B2ABCB200472FA0 /* TopicDetailView.swift */,
 				27FE1E792B2ABD1D00472FA0 /* ProfileViewModel.swift */,
 				27FE1E752B2ABCCA00472FA0 /* UnitsView.swift */,
-				27FE1E732B2ABCB200472FA0 /* TopicDetailView.swift */,
 				273AB6EF2B679CB200055316 /* redirectview.swift */,
 				27FE1E6F2B2ABC5E00472FA0 /* QuizView.swift */,
 				27FE1E712B2ABC7D00472FA0 /* QuizViewModel.swift */,
@@ -341,6 +344,7 @@
 				27BD4D982BC57B85006042E3 /* Login.swift in Sources */,
 				273AB6EE2B679CA500055316 /* stocktutorial.swift in Sources */,
 				27FE1E762B2ABCCA00472FA0 /* UnitsView.swift in Sources */,
+				360ECCD72BED1015000BC893 /* LogoutButton.swift in Sources */,
 				273AB6E72B679C0900055316 /* OldProfileView.swift in Sources */,
 				27FE1E702B2ABC5E00472FA0 /* QuizView.swift in Sources */,
 				27FE1E7A2B2ABD1D00472FA0 /* ProfileViewModel.swift in Sources */,

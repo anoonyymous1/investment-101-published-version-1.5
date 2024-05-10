@@ -1,37 +1,26 @@
-//
-//  StartView.swift
-//  investment 101
-//
-//  Created by Celine Tsai on 19/1/24.
-//
-
 import SwiftUI
 
 struct StartView: View {
+    @State private var showSplash = true   // Initially show the splash screen
+    @State private var isLoggedIn: Bool = false
+    @EnvironmentObject var appState: AppState
     
-    @State var showSplash: Bool = false
     
     var body: some View {
         ZStack {
-            if self.showSplash {
-                MainMenuView()
+            if checkIfUserIsLoggedIn() {
+                LoginSuccessView()
             } else {
-                SplashScreenView()
-                    
+                LoginView()
             }
         }
         .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                withAnimation {
-                    self.showSplash = true
-                }
-            }
+            self.isLoggedIn = checkIfUserIsLoggedIn()  // Check login status
         }
+        .navigationBarBackButtonHidden(true)  // Hide the back button to prevent navigation
+        .navigationBarHidden(true)            // Optionally hide the entire navigation bar
     }
+    
+    
 }
 
-struct StartView_Previews: PreviewProvider {
-    static var previews: some View {
-        StartView()
-    }
-}

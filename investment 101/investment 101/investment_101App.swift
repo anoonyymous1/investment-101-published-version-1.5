@@ -10,10 +10,13 @@ import SwiftUI
 @main
 struct investment_101App: App {
     let persistenceController = PersistenceController.shared
-
+    
+    @StateObject var appState = AppState()
+    
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            StartView()
+                .environmentObject(appState)
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

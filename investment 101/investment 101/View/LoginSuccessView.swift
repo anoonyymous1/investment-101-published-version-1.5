@@ -1,32 +1,30 @@
-//
-//  LoginSuccessView.swift
-//  investment 101
-//
-//  Created by Celine Tsai on 9/4/24.
-//
 import SwiftUI
 
 struct LoginSuccessView: View {
     
-    @State var showSplash: Bool = false
-    
+    @State private var showSplash = true
+    @EnvironmentObject var appState: AppState
     var body: some View {
         ZStack {
-            if getLoginState() {
-                MainMenuView()
-            } else {
+            if showSplash {
                 SplashScreenView()
+            } else {
+                MainMenuView()
             }
         }
         .onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                loginUser()
+                appState.isAuthenticated = true
                 withAnimation {
-                    self.showSplash = true
-                    setLoginState(true)
+                    // After login, change state to show main menu
+                    self.showSplash = false
                 }
             }
         }
         .navigationBarBackButtonHidden(true) // Hide the back button
         .navigationBarHidden(true) // Optionally hide the entire navigation bar
     }
+    
 }
+
